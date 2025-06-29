@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Репетитор по информатике | Владимир Фадеев</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"Fira Code"', 'monospace']
+          },
+          animation: {
+            fadeIn: 'fadeIn 1.5s ease-in-out',
+            pulseBox: 'pulseBox 2s infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            },
+            pulseBox: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(0,0,0,0)' },
+              '50%': { boxShadow: '0 0 20px rgba(0,0,0,0.1)' }
+            }
+          },
+          colors: {
+            dark: '#0f0f0f',
+            light: '#f9f9f9',
+            softgray: '#cfcfcf',
+            midgray: '#888888',
+            fadedred: '#ff4d4d33',
+            brightred: '#ff4d4d'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark text-light font-mono p-6 animate-fadeIn">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4 text-light">Репетитор по информатике</h1>
+    <p class="text-lg mb-6 text-softgray bg-black/30 p-4 rounded-md border border-midgray">
+      Владимир Фадеев. Сдал ЕГЭ по информатике на 100 баллов в 2025.
+    </p>
+
+    <div class="bg-black/20 p-6 rounded-xl border border-gray-700 mb-8 transition-transform duration-300 hover:scale-[1.02] animate-fadeIn">
+      <p class="mb-3 text-base">Хотите, чтобы ваш ребёнок занимался с удовольствием? Добро пожаловать.</p>
+      <ul class="list-disc list-inside text-softgray space-y-2">
+        <li>ОГЭ по информатике — чётко и по делу</li>
+        <li>Никакой зубрёжки — только понятное объяснение</li>
+        <li>Подача на уровне: серьёзно или по-дружески — как нужно</li>
+        <li>Иногда примеры из жизни, иногда — из игр</li>
+        <li>Платформы: Zoom, Discord, Minecraft — как удобно</li>
+      </ul>
+    </div>
+
+    <div class="bg-black/20 p-6 rounded-xl border border-gray-700 mb-8 transition-transform duration-300 hover:scale-[1.02] animate-fadeIn">
+      <h2 class="text-xl font-bold text-light mb-3">Вводное занятие бесплатно</h2>
+      <ul class="list-disc list-inside text-softgray space-y-2">
+        <li>Настроим нужную среду</li>
+        <li>Расскажу про подготовку</li>
+        <li>Поймём уровень знаний</li>
+        <li>Покажу, как Python — это просто и интересно</li>
+      </ul>
+    </div>
+
+    <div class="bg-black/20 p-6 rounded-xl border border-gray-700 text-left transition-transform duration-300 hover:scale-[1.02] animate-fadeIn">
+      <p class="text-lg font-bold mb-2">Контакты</p>
+      <p class="text-softgray">Telegram: <a href="https://t.me/BOBA_007" class="underline hover:text-light">@BOBA_007</a></p>
+      <p class="text-softgray mt-1">Авито: <a href="https://www.avito.ru/moskva/predlozheniya_uslug/neformalnyy_repetitor_po_informatike_oge_7533822312?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJxbjk3Z1hWU3pDejl6Q0lCIjt9tKRCTD8AAAA" class="underline hover:text-light">Ссылка на объявление</a></p>
+    </div>
+
+    <div class="bg-fadedred text-white p-6 rounded-xl mt-10 animate-fadeIn text-center">
+      <h3 class="text-2xl font-bold mb-2">
+        <span class="text-brightred">&#x2757;</span>
+        ДИСКЛЕЙМЕР
+        <span class="text-brightred">&#x2757;</span>
+      </h3>
+      <p class="text-softgray">После занятий ребёнок может полюбить программирование. Это нормально.</p>
+    </div>
+
+    <p class="text-sm text-midgray text-right mt-4">Москва, CODEBAS team</p>
+  </div>
+</body>
+</html>
